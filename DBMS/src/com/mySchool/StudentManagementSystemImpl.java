@@ -190,7 +190,7 @@ public class StudentManagementSystemImpl implements StudentManagementSystem {
 	public void sortStudents() {
 
 		System.out.println(" 1: Sort by ID in ascending order");
-		System.out.println(" 2: Sort by ID in descending order");
+//		System.out.println(" 2: Sort by ID in descending order");
 		System.out.println(" 3: Sort by Age "+'\n'+" 4: Sort by Name"+'\n'+" 5: Sort by marks"+'\n');
 		System.out.print(" Enter your choice : ");
 		int choice = scan.nextInt();
@@ -205,15 +205,15 @@ public class StudentManagementSystemImpl implements StudentManagementSystem {
 			display(list);
 			break;
 			
-		case 2:
-			
-			Map<String, Student> ts2 = new TreeMap<String, Student>(Collections.reverseOrder()); //TreeMap with reverse order
-			ts2.putAll(db);							// Putting db(LinkedHashMap) inside ts2(TreeMap)
-			Set<String> keySet2 = ts2.keySet();
-			for(String key:keySet2) {
-				System.out.println(db.get(key));	//Getting db values in reverse order
-			}
-			break;
+//		case 2:
+//			
+//			Map<String, Student> ts2 = new TreeMap<String, Student>(Collections.reverseOrder()); //TreeMap with reverse order
+//			ts2.putAll(db);							// Putting db(LinkedHashMap) inside ts2(TreeMap)
+//			Set<String> keySet2 = ts2.keySet();
+//			for(String key:keySet2) {
+//				System.out.println(db.get(key));	//Getting db values in reverse order
+//			}
+//			break;
 		
 		case 3: 
 			
